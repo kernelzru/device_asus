@@ -86,6 +86,10 @@ PRODUCT_PACKAGES += \
     ueventd.qcom.rc \
     init.device.rc
 
+# Recovery
+PRODUCT_PACKAGES += \
+    librecovery_updater_asus
+
 # Seccomp
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/seccomp/mediacodec-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy

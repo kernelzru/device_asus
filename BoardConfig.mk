@@ -40,5 +40,9 @@ TARGET_KERNEL_CONFIG := X00TD_defconfig
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
+# Releasetools
+TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_asus
+TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
+
 # Inherit the proprietary files
 include vendor/asus/X00TD/BoardConfigVendor.mk
