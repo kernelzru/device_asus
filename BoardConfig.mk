@@ -210,4 +210,4 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 
 # inherit from the proprietary version
--include vendor/asus/X00TD/BoardConfigVendor.mk
+include vendor/asus/X00TD/BoardConfigVendor.mk
