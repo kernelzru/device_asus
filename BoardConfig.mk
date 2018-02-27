@@ -37,5 +37,8 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_sdm660
 # Kernel
 TARGET_KERNEL_CONFIG := X00TD_defconfig
 
+# Recovery
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
+
 # Inherit the proprietary files
 include vendor/asus/X00TD/BoardConfigVendor.mk
