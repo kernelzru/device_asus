@@ -110,6 +110,9 @@ TARGET_KERNEL_CONFIG := X00TD_defconfig
 TARGET_KERNEL_ADDITIONAL_FLAGS := \
     HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 
+# LMKD
+TARGET_LMKD_STATS_LOG := true
+
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
 
