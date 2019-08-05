@@ -13,6 +13,9 @@
 /data/system/cdfinger(/.*)?                                                   u:object_r:cdfinger_data_file:s0
 /dev/goodix_fp                                                                u:object_r:gxfingerprint_device:s0
 
+# Light HAL
+/(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.asus_sdm660                u:object_r:hal_light_default_exec:s0
+
 # Nvram
 /system/bin/nvram_btwifi                                                      u:object_r:nvram_btwifi_exec:s0
 
