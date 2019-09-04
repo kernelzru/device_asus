@@ -157,8 +157,9 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 # Sepolicy
 #include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 #BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
-SELINUX_IGNORE_NEVERALLOWS := true
-
+SELINUX_IGNORE_NEVERALLOWS := true 
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy-minimal
+ 
 # SurfaceFlinger
 TARGET_USE_AOSP_SURFACEFLINGER := true
 
