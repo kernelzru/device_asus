@@ -144,6 +144,9 @@ ENABLE_VENDOR_RIL_SERVICE := true
 TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_asus
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
+# Sepolicy
+include device/qcom/sepolicy-legacy-um/sepolicy.mk
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 
