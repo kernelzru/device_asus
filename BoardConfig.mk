@@ -51,6 +51,9 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_asus
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
+# Treble
+BOARD_VNDK_VERSION := current
+
 # WiFi
 BOARD_HAS_QCOM_WLAN := true
 BOARD_WLAN_DEVICE := qcwcn
