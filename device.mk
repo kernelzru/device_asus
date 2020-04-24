@@ -456,6 +456,7 @@ PRODUCT_PACKAGES += \
     libwifi-hal-qcom \
     TetheringConfigOverlay \
     wcnss_service \
+    WifiOverlay \
     wpa_supplicant \
     wpa_supplicant.conf \
     X00TDWifiOverlay
