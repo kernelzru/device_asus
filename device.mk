@@ -27,7 +27,7 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 $(call inherit-product, $(LOCAL_PATH)/hidl-hals.mk)
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 2280
+TARGET_SCREEN_HEIGHT := 2160
 TARGET_SCREEN_WIDTH := 1080
 
 # Device uses high-density artwork where available
@@ -161,10 +161,6 @@ PRODUCT_PACKAGES += \
     libqdMetaData.system \
     libtinyxml \
     libgenlock
-
-# Doze mode
-PRODUCT_PACKAGES += \
-    Doze
 
 # FM
 PRODUCT_PACKAGES += \
