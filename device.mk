@@ -168,6 +168,13 @@ PRODUCT_PACKAGES += \
     libqcomfm_jni \
     qcom.fmradio
 
+# Fingerprint feature
+PRODUCT_PACKAGES += \
+    fingerprintd
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
+
 # Excluded Input devices
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/excluded-input-devices.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/excluded-input-devices.xml
@@ -228,10 +235,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libandroid_net \
     netutils-wrapper-1.0
-
-# Nocutout
-PRODUCT_PACKAGES += \
-    NoCutoutOverlay
 
 # NFC
 PRODUCT_COPY_FILES += \

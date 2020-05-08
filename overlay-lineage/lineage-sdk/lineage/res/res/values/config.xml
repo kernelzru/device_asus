@@ -56,7 +56,7 @@
     <integer name="config_deviceLightCapabilities">232</integer>
 
     <!-- Whether device has a notch -->
-    <bool name="config_haveNotch">true</bool>
+    <bool name="config_haveNotch">false</bool>
 
     <!-- Whether device needs to wait for Qualcomm MPCTL service to start
          before setting power profiles on boot. -->
