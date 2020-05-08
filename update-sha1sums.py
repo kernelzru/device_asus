@@ -20,7 +20,7 @@ import os
 import sys
 from hashlib import sha1
 
-device='X01BD'
+device='X00TD'
 vendor='asus'
 
 with open('proprietary-files-qc.txt', 'r') as f:

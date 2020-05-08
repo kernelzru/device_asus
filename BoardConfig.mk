@@ -13,7 +13,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-DEVICE_PATH := device/asus/X01BD
+DEVICE_PATH := device/asus/X00TD
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := sdm660
@@ -41,7 +41,7 @@ TARGET_USES_64_BIT_BINDER := true
 
 # Assert
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
-TARGET_OTA_ASSERT_DEVICE := ASUS_X01BD,X01BD
+TARGET_OTA_ASSERT_DEVICE := ASUS_X00TD,X00TD
 
 # Kernel
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200,n8 androidboot.console=ttyMSM0 earlycon=msm_serial_dm,0xc170000 androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37 ehci-hcd.park=3 sched_enable_hmp=1 sched_enable_power_aware=1 service_locator.enable=1 swiotlb=1 loop.max_part=7
@@ -166,7 +166,7 @@ BOARD_USES_QCOM_HARDWARE := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
 # Releasetools
-TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_X01BD
+TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_X00TD
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
 # RIL
@@ -198,4 +198,4 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 
 # inherit from the proprietary version
--include vendor/asus/X01BD/BoardConfigVendor.mk
+-include vendor/asus/X00TD/BoardConfigVendor.mk

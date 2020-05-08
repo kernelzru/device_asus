@@ -15,7 +15,7 @@
 #
 
 # Call the proprietary setup
-$(call inherit-product, vendor/asus/X01BD/X01BD-vendor.mk)
+$(call inherit-product, vendor/asus/X00TD/X00TD-vendor.mk)
 
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
@@ -349,7 +349,7 @@ PRODUCT_PACKAGES += \
 
 # Recovery
 PRODUCT_PACKAGES += \
-    librecovery_updater_X01BD
+    librecovery_updater_X00TD
 
 # Seccomp
 PRODUCT_COPY_FILES += \
