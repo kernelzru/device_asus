@@ -3,17 +3,19 @@ typeattribute hal_fingerprint_default data_between_core_and_vendor_violators;
 vndbinder_use(hal_fingerprint_default)
 
 binder_call(hal_fingerprint_default, cdfinger_service)
+binder_call(hal_fingerprint_default, goodix_fingerprint_vndservice)
 binder_call(hal_fingerprint_default, hal_perf_default)
 
 allow hal_fingerprint_default cdfinger_device:chr_file rw_file_perms;
-allow hal_fingerprint_default focaltech_device:chr_file rw_file_perms;
 allow hal_fingerprint_default tee_device:chr_file rw_file_perms;
 
 allow hal_fingerprint_default hal_perf_hwservice:hwservice_manager find;
 
-allow hal_fingerprint_default focaltech_hwservice:hwservice_manager add;
-allow hal_fingerprint_default focaltech_service:service_manager add;
-allow hal_fingerprint_default focaltech_vndservice:service_manager add;
+allow hal_fingerprint_default gxfingerprint_data_file:dir rw_dir_perms;
+allow hal_fingerprint_default gxfingerprint_data_file:file rw_file_perms;
+allow hal_fingerprint_default gxfingerprint_device:chr_file rw_file_perms;
+
+allow hal_fingerprint_default goodix_fingerprint_vndservice:service_manager add;
 
 # Allow hal_fingerprint_default to read, write and create files in persist
 allow hal_fingerprint_default persist_drm_file:file create_file_perms;
