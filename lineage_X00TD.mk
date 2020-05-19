@@ -41,4 +41,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="crosshatch-user 10 QQ2A.200501.001.B2 6352890 release-keys"
 
 # Build fingerprint
- BUILD_FINGERPRINT := google/crosshatch/crosshatch:10/QQ2A.200501.001.B2/6352890:user/release-keys
+BUILD_FINGERPRINT := google/crosshatch/crosshatch:10/QQ2A.200501.001.B2/6352890:user/release-keys
+
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.build.fingerprint=$(BUILD_FINGERPRINT)
