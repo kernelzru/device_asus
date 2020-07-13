@@ -6,8 +6,6 @@
 
 DEVICE_PATH := device/asus/X00TD
 
-BOARD_VENDOR := asus
-
 # APEX image
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
