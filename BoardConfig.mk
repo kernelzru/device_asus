@@ -58,6 +58,9 @@ TARGET_KERNEL_CONFIG := X00TD_defconfig
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
+# RIL
+ENABLE_VENDOR_RIL_SERVICE := true
+
 # Releasetools
 TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_asus
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
