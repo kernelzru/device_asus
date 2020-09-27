@@ -87,6 +87,11 @@ function blob_fixup() {
         sed -i 's|/product/framework/qcrilhook.jar|/system_ext/framework/qcrilhook.jar|g' "${2}"
         ;;
 
+    system_ext/lib64/libdpmframework.so)
+        "${PATCHELF}" --replace-needed "libcutils.so" "libcutils-v29.so" "${2}"
+        "${PATCHELF}" --add-needed "libcutils.so" "${2}"
+        ;;
+
     esac
 }
 
