@@ -54,6 +54,9 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_asus
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
+
 # Treble
 BOARD_VNDK_VERSION := current
 
