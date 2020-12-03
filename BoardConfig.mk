@@ -95,7 +95,7 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_sdm660
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 androidboot.console=ttyMSM0
 BOARD_KERNEL_CMDLINE += earlycon=msm_serial_dm,0xc170000 androidboot.hardware=qcom
 BOARD_KERNEL_CMDLINE += user_debug=31 msm_rtb.filter=0x37 ehci-hcd.park=3
-BOARD_KERNEL_CMDLINE += sched_enable_hmp=1 sched_enable_power_aware=1
+BOARD_KERNEL_CMDLINE += sched_enable_power_aware=1
 BOARD_KERNEL_CMDLINE += service_locator.enable=1 swiotlb=1 loop.max_part=7
 BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
@@ -133,10 +133,6 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
 
 # Platform
 TARGET_BOARD_PLATFORM := sdm660
-
-# Power
-TARGET_USES_INTERACTION_BOOST := true
-TARGET_TAP_TO_WAKE_NODE := "/proc/tpd_gesture"
 
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/properties/odm.prop
