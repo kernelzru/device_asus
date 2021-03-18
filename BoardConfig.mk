@@ -153,6 +153,9 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
+# SurfaceFlinger
+TARGET_USE_AOSP_SURFACEFLINGER := true
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 
