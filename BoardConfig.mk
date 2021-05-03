@@ -9,6 +9,9 @@ include device/asus/sdm660-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/asus/X00TD
 
+# APEX image
+DEXPREOPT_GENERATE_APEX_IMAGE := true
+
 # Assert
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 TARGET_OTA_ASSERT_DEVICE := ASUS_X00TD,X00TD,X00T
