@@ -375,6 +375,7 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.sh
 
 PRODUCT_PACKAGES += \
+    init.device.rc \
     fstab.qcom \
     init.msm.usb.configfs.rc \
     init.qcom.asus.rc \
@@ -383,7 +384,7 @@ PRODUCT_PACKAGES += \
     init.recovery.qcom.rc \
     init.target.rc \
     ueventd.qcom.rc \
-    init.device.rc
+    apex_metadata.rc
 
 # Recovery
 PRODUCT_PACKAGES += \
