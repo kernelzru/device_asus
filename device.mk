@@ -487,6 +487,9 @@ PRODUCT_PACKAGES += \
     libmediaextractorservice \
     libnl
 
+# Zen Parts
+#PRODUCT_PACKAGES += \
+#    ZenParts
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/asus/X00TD/X00TD-vendor.mk)
-
