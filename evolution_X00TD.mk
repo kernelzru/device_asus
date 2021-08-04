@@ -18,6 +18,9 @@ TARGET_BOOT_ANIMATION_RES := 720
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+# Evoution-X
+EVO_BUILD_TYPE := OFFICIAL
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := evolution_X00TD
 PRODUCT_DEVICE := X00TD
