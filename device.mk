@@ -16,6 +16,9 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-evolution
 
+# Powerhint
+EAS_POWERHINT_VARIANT := sdm636
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.device.rc
