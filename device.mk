@@ -399,7 +399,8 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     ueventd.qcom.rc \
     apex_metadata.rc \
-    init.performance_level.rc
+    init.performance_level.rc \
+    init.temp.rc
 
 # Seccomp
 PRODUCT_COPY_FILES += \
