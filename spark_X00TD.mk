@@ -36,8 +36,8 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-#SPARK OFFICIAL
-SPARK_BUILD_TYPE := OFFICIAL
+#SPARK stuff
+SPARK_BUILD_TYPE := UNOFFICIAL
 #WITH_GAPPS=true
 
 PRODUCT_BRAND := asus
@@ -46,10 +46,10 @@ PRODUCT_MANUFACTURER := asus
 PRODUCT_NAME := spark_X00TD
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="redfin-user 11 RQ3A.210905.001 7511028 release-keys"
+    PRIVATE_BUILD_DESC="redfin-user 11 RQ3A.211001.001 7641976 release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ3A.210905.001/7511028:user/release-keys"
+BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ3A.211001.001/7641976:user/release-keys"
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
