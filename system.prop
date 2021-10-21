@@ -234,7 +234,7 @@ media.stagefright.enable-record=true
 ro.vendor.qti.va_aosp.support=1
 
 # Adding maintaoner tag
- ro.spark.maintainer=jai_91
+ ro.spark.maintainer=Tiktodz
 # GBoard Spacing
 ro.com.google.ime.kb_pad_port_b=1
 
