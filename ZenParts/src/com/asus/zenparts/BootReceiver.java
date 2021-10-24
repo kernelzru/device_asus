@@ -117,10 +117,7 @@ public class BootReceiver extends BroadcastReceiver implements Utils {
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
         
         // Dirac
-        boolean denabled = sharedPrefs.getBoolean(DeviceSettings.PREF_ENABLE_DIRAC, true);
-        if (denabled) {
-            context.startService(new Intent(context, DiracService.class));
-        }
+        context.startService(new Intent(context, DiracService.class));
 
         // GAINS
         int gain = Settings.Secure.getInt(context.getContentResolver(), DeviceSettings.PREF_HEADPHONE_GAIN, 5);
