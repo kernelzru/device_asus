@@ -41,7 +41,6 @@ PRODUCT_PACKAGES += \
     libtinycompress
 
 PRODUCT_PACKAGES += \
-    liba2dpoffload \
     libhdmiedid \
     libhfp \
     libsndmonitor \
