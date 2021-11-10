@@ -18,7 +18,8 @@ TARGET_BOOT_ANIMATION_RES := 1080
 NAD_BUILD_TYPE := UNOFFICIAL
 USE_PIXEL_CHARGING := true
 TARGET_USES_BLUR := true
-IS_PHONE := true
+TARGET_GAPPS_ARCH := arm64
+USE_GAPPS := true
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -35,7 +36,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-asus
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE=ASUS_X00T \
     PRODUCT_NAME=WW_X00T \
-    PRIVATE_BUILD_DESC="redfin-user 11 RQ3A.21101.001.A1 7641976 release-keys"
+    PRIVATE_BUILD_DESC="redfin-user 12 SP1A.211105.003 7757856 release-keys"
 
 # Build fingerprint
-BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ3A.21101.001.A1/7641976:user/release-keys"
+BUILD_FINGERPRINT := "google/redfin/redfin:12/SP1A.211105.003/7757856:user/release-keys"
