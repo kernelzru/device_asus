@@ -9,6 +9,7 @@ LOCAL_OVERRIDES_PACKAGES += DMService GCS GoogleCamera MaestroPrebuilt Maps Micr
 LOCAL_OVERRIDES_PACKAGES += OBDM_Permissions Ornament SafetyHubPrebuilt SCONE ScribePrebuilt Showcase
 LOCAL_OVERRIDES_PACKAGES += SoundAmplifierPrebuilt SprintDM SprintHM Tycho USCCDM VZWAPNLib
 LOCAL_OVERRIDES_PACKAGES += VzwOmaTrigger WallpapersBReel2020 arcore obdm_stub Photos RecorderPrebuilt OemDmTrigger
+LOCAL_OVERRIDES_PACKAGES += YouTubeMusicPrebuilt YouTube Drive
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := platform
 LOCAL_SRC_FILES := /dev/null
