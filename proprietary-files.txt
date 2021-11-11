@@ -1359,10 +1359,6 @@ vendor/lib64/vendor.qti.imsrtpservice@3.0.so|25517caf74691b812320b46b477a3f4161c
 # Radio - IMS - from mojito
 vendor/lib64/lib-imsvtcore.so|47d945bf976134fdb57b4f44dd73a1347f2bf421
 
-# QTI Display - from LA.UM.9.6.2.r1-03300-89xx.0
-vendor/lib/libdisplayconfig.qti.so|7992c42b4cc784348381d824037216cff9922b22
-vendor/lib64/libdisplayconfig.qti.so|ed995e14b48117b77fe8a496d00d3f879b8c7dc3
-
 # DRM - from phoenix_sprout
 vendor/lib/libspl.so|d5fa014019673d8e6b8a0785261914748f89011b
 vendor/lib64/libspl.so|f9c12bc40b075ef5b933fe0ff6b86ebe72a031db
