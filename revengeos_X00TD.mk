@@ -9,22 +9,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit some common xdroidCAF stuff.
-$(call inherit-product, vendor/xdroid/config/common.mk)
-
-# xdroidCAF Properties
+# Inherit some common RevengeOS stuff.
+$(call inherit-product, vendor/revengeos/config/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
-XDROID_BUILD_TYPE := STBL-4.4
-XDROID_BOOT_DARK := true
-XDROID_UI_BLUR := true
-TARGET_INCLUDE_WIFI_EXT := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
+REVENGEOS_BUILDTYPE := UNOFFICIAL
+REVENGEOS_MAINTAINER := Tiktodz
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := xdroid_X00TD
+PRODUCT_NAME := revengeos_X00TD
 PRODUCT_DEVICE := X00TD
 PRODUCT_BRAND := asus
 PRODUCT_MODEL := Zenfone Max Pro M1

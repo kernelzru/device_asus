@@ -5,8 +5,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/xdroid_X00TD.mk
+    $(LOCAL_DIR)/revengeos_X00TD.mk
 
 COMMON_LUNCH_CHOICES := \
-    xdroid_X00TD-userdebug
+    revengeos_X00TD-userdebug
 
