@@ -834,7 +834,7 @@ on property:vendor.usb.tethering=true
     write /sys/class/net/rndis0/queues/rx-0/rps_cpus ${vendor.usb.rps_mask}
 
 on property:sys.usb.config=rndis
-    setprop sys.usb.config rndis,${persist.vendor.usb.config.extra}
+    setprop sys.usb.config rndis,none
 
 on property:sys.usb.config=rndis,none && property:sys.usb.configfs=0
     write /sys/class/android_usb/android0/enable 0
@@ -847,7 +847,7 @@ on property:sys.usb.config=rndis,none && property:sys.usb.configfs=0
     setprop sys.usb.state rndis
 
 on property:sys.usb.config=rndis,adb && property:sys.usb.configfs=0
-    setprop sys.usb.config rndis,${persist.vendor.usb.config.extra},adb
+    setprop sys.usb.config rndis,none,adb
 
 on property:sys.usb.config=rndis,none,adb && property:sys.usb.configfs=0
     write /sys/class/android_usb/android0/enable 0
