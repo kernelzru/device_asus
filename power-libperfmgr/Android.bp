@@ -13,6 +13,10 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+package {
+    default_applicable_licenses: ["Android-Apache-2.0"],
+}
+
 cc_library {
     name: "libdisppower",
     proprietary: true,
@@ -29,13 +33,13 @@ cc_library {
 }
 
 cc_binary {
-    name: "android.hardware.power-service.asus_sdm660-libperfmgr",
+    name: "android.hardware.power-service.X00TD-libperfmgr",
     relative_install_path: "hw",
-    init_rc: ["aidl/android.hardware.power-service.asus_sdm660-libperfmgr.rc"],
-    vintf_fragments: ["aidl/android.hardware.power-service.asus_sdm660.xml"],
+    init_rc: ["aidl/android.hardware.power-service.X00TD-libperfmgr.rc"],
+    vintf_fragments: ["aidl/android.hardware.power-service.X00TD.xml"],
     vendor: true,
     shared_libs: [
-        "android.hardware.power-V1-ndk_platform",
+        "android.hardware.power-V2-ndk_platform",
         "libbase",
         "libcutils",
         "liblog",
@@ -43,11 +47,14 @@ cc_binary {
         "libbinder_ndk",
         "libdisppower",
         "libperfmgr",
+        "libprocessgroup",
         "pixel-power-ext-V1-ndk_platform",
     ],
     srcs: [
         "aidl/service.cpp",
         "aidl/Power.cpp",
         "aidl/PowerExt.cpp",
+        "aidl/PowerHintSession.cpp",
+        "aidl/PowerSessionManager.cpp",
     ],
 }
