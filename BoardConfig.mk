@@ -230,9 +230,6 @@ ENABLE_VENDOR_RIL_SERVICE := true
 # Seccomp
 BOARD_SECCOMP_POLICY := $(DEVICE_PATH)/seccomp
 
-# Security patch level
-VENDOR_SECURITY_PATCH := 2019-06-01
-
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
@@ -244,6 +241,9 @@ TARGET_USE_SDCLANG := true
 # Vendor init
 TARGET_INIT_VENDOR_LIB := libinit_X00T
 TARGET_RECOVERY_DEVICE_MODULES := libinit_X00T
+
+# Vendor Security patch level
+VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
 # Wifi
 BOARD_HAS_QCOM_WLAN := true
