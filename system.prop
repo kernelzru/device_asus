@@ -224,4 +224,7 @@ vendor.debug.camera.prop_dis=1
 persist.vendor.camera.aec.sync=1
 # end of device/qcom/sdm660_64/system.prop
 
+# Pre-rendering
+ro.vendor.perf.scroll_opt=true
+
 #
