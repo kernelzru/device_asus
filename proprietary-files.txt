@@ -996,9 +996,6 @@ vendor/lib64/libtinyxml2_1.so
 vendor/lib/hw/vulkan.sdm660.so
 vendor/lib64/hw/vulkan.sdm660.so
 
-# IRQ balance
-vendor/bin/msm_irqbalance
-
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
 vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc
@@ -1051,6 +1048,26 @@ vendor/lib64/libgpustats.so
 
 # NFC
 vendor/lib/libpn553_fw.so
+
+# Perf
+vendor/bin/energy-awareness
+vendor/bin/hw/vendor.qti.hardware.perf@2.0-service
+vendor/bin/msm_irqbalance
+vendor/etc/init/vendor.qti.hardware.perf@2.0-service.rc
+vendor/etc/perf/commonresourceconfigs.xml
+vendor/etc/perf/perfboostsconfig.xml
+vendor/etc/perf/targetconfig.xml
+vendor/etc/perf/targetresourceconfigs.xml
+vendor/lib/libperfconfig.so
+vendor/lib/libperfgluelayer.so
+vendor/lib/libqti-perfd-client.so
+vendor/lib/libqti-perfd.so
+vendor/lib/libqti-util.so
+vendor/lib64/libperfconfig.so
+vendor/lib64/libperfgluelayer.so
+vendor/lib64/libqti-perfd-client.so
+vendor/lib64/libqti-perfd.so
+vendor/lib64/libqti-util.so
 
 # Peripheral manager
 vendor/bin/pm-proxy
@@ -1279,10 +1296,6 @@ vendor/lib/libsdm-color.so|05e6eedb8f9656d9097a1c3cee09ceeef1025181
 vendor/lib/libsdmextension.so|ebc3f1aed53d208ccc665a173198adb9e0ed6a79
 vendor/lib64/libsdm-color.so|9c80ac4e059bff1c53814e9f5f71a5fbe38bce40
 vendor/lib64/libsdmextension.so|913503f002aa2afbeca90d429bac4bff4a2266e0
-
-# Perf
-vendor/lib/libqti-perfd-client.so|895057194f38202a421282efa4f18fdf0765268a
-vendor/lib64/libqti-perfd-client.so|2ec33212cde2a20701d4ecdc512e7556870bdd61
 
 # Radio - IMS - from LA.UM.9.6.2.r1-02500-89xx.0
 -system_ext/priv-app/ims/ims.apk|230315f38d7c2fc6c9d83bb6ec1f8f59254090cf
