@@ -9,24 +9,26 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit some common LineageOS stuff
-$(call inherit-product, vendor/komodo/config/common_full_phone.mk)
+# Inherit some common Cipher stuff
+$(call inherit-product, vendor/cipher/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
-KOMODO_BUILD_TYPE := UNOFFICIAL
-KOMODO_GAPPS_TYPE := nogapps
-IS_PHONE := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+CIPHER_GAPPS := true
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := komodo_X00TD
+PRODUCT_NAME := cipher_X00TD
 PRODUCT_DEVICE := X00TD
 PRODUCT_BRAND := asus
 PRODUCT_MODEL := Zenfone Max Pro M1
 PRODUCT_MANUFACTURER := asus
 
 PRODUCT_GMS_CLIENTID_BASE := android-asus
+
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.cipher.maintainer=Tiktodz
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE=ASUS_X00T \
