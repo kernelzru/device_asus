@@ -14,14 +14,9 @@ $(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 
 # Xtended stuff
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_FACE_UNLOCK_SUPPORTED := true
 XTENDED_BUILD_TYPE := UNOFFICIAL
-XTENDED_BUILD_VARIANT := VANILLA
-
-# Maintainer
-XTENDED_BUILD_TYPE := UNOFFICIAL
+XTENDED_BUILD_VARIANT := GAPPS
 XTENDED_BUILD_MAINTAINER := Tiktodz
-XTENDED_BUILD_DONATE_URL := https://www.paypal.me/benkz29
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -38,7 +33,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-asus
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE=ASUS_X00T \
     PRODUCT_NAME=WW_X00T \
-    PRIVATE_BUILD_DESC="redfin-user 11 RQ3A.21101.001.A1 7641976 release-keys"
+    PRIVATE_BUILD_DESC="redfin-user 12 SQ1A.220105.002 7961164 release-keys"
 
 # Build fingerprint
-BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ3A.21101.001.A1/7641976:user/release-keys"
+BUILD_FINGERPRINT := "google/redfin/redfin:12/SQ1A.220105.002/7961164:user/release-keys"
