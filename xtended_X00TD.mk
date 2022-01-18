@@ -14,9 +14,10 @@ $(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 
 # Xtended stuff
 TARGET_BOOT_ANIMATION_RES := 1080
-XTENDED_BUILD_TYPE := UNOFFICIAL
-XTENDED_BUILD_VARIANT := GAPPS
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
 XTENDED_BUILD_MAINTAINER := Tiktodz
+PROCESSOR_MODEL := SDM660
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
