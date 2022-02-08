@@ -14,8 +14,6 @@ $(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 
 # Xtended stuff
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_INCLUDE_STOCK_ARCORE := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
 XTENDED_BUILD_MAINTAINER := Tiktodz
 PROCESSOR_MODEL := SDM660
 
