@@ -5,10 +5,10 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/potato_X00TD.mk
+    $(LOCAL_DIR)/radiant_X00TD.mk
 
 COMMON_LUNCH_CHOICES := \
-    potato_X00TD-user \
-    potato_X00TD-userdebug \
-    potato_X00TD-eng
+    radiant_X00TD-user \
+    radiant_X00TD-userdebug \
+    radiant_X00TD-eng
 
