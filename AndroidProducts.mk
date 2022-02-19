@@ -5,10 +5,10 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/xtended_X00TD.mk
+    $(LOCAL_DIR)/aosp_X00TD.mk
 
 COMMON_LUNCH_CHOICES := \
-    xtended_X00TD-userdebug \
-    xtended_X00TD-eng \
-    xtended_X00TD-user
+    aosp_X00TD-userdebug \
+    aosp_X00TD-eng \
+    aosp_X00TD-user
 
