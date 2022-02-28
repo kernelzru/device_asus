@@ -9,12 +9,23 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit some common LineageOS stuff
-$(call inherit-product, vendor/komodo/config/common_full_phone.mk)
+# Inherit some common Komodo stuff.
+$(call inherit-product, vendor/komodo/config/common.mk)
+
+# Komodo Stuff
+KOMODO_OFFICIAL := false
+KOMODO_GAPPS_TYPE := gapps
+KOMODO_VARIANT := RELEASE
+
+# Some Build Flags
 TARGET_BOOT_ANIMATION_RES := 1080
-KOMODO_BUILD_TYPE := UNOFFICIAL
-KOMODO_GAPPS_TYPE := nogapps
-IS_PHONE := true
+TARGET_FACE_UNLOCK := true
+TARGET_USES_BLUR := false
+TARGET_USES_AOSP_CHARGER := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+TARGET_INCLUDE_STOCK_ARCORE := false
+TARGET_DISABLE_POSTRENDER_CLEANUP := true
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
