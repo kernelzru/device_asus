@@ -24,6 +24,8 @@ WITH_GMS := true
 PRODUCT_GENERIC_PROPERTIES += \
     ro.cherish.maintainer=Tiktodz
 
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
+
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
