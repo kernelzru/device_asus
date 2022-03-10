@@ -14,15 +14,12 @@ $(call inherit-product, vendor/komodo/config/common.mk)
 
 # Komodo Stuff
 KOMODO_OFFICIAL := false
-KOMODO_GAPPS_TYPE := gapps
-KOMODO_VARIANT := RELEASE
+KOMODO_GAPPS_TYPE := nogapps
 
 # Some Build Flags
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK := true
 TARGET_USES_BLUR := false
-TARGET_USES_AOSP_CHARGER := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_INCLUDE_STOCK_ARCORE := false
 
