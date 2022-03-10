@@ -18,10 +18,9 @@ KOMODO_GAPPS_TYPE := nogapps
 
 # Some Build Flags
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_FACE_UNLOCK := true
+TARGET_FACE_UNLOCK := false
 TARGET_USES_BLUR := false
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
-TARGET_INCLUDE_STOCK_ARCORE := false
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
