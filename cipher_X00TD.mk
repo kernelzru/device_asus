@@ -12,7 +12,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 # Inherit some common Cipher stuff
 $(call inherit-product, vendor/cipher/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
-CIPHER_GAPPS := true
 
 # Maintainer
 CIPHER_MAINTAINER := Tiktodz
