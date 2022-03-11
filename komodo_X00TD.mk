@@ -9,12 +9,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
+BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
+
 # Inherit some common Komodo stuff.
 $(call inherit-product, vendor/komodo/config/common.mk)
 
 # Komodo Stuff
 KOMODO_OFFICIAL := false
 KOMODO_GAPPS_TYPE := nogapps
+KOMODO_VARIANT := RELEASE
 
 # Some Build Flags
 TARGET_BOOT_ANIMATION_RES := 1080
