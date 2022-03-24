@@ -5,8 +5,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/komodo_X00TD.mk
+    $(LOCAL_DIR)/lighthouse_X00TD.mk
 
 COMMON_LUNCH_CHOICES := \
-    komodo_X00TD-userdebug
+    lighthouse_X00TD-userdebug
 
