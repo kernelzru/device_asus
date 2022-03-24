@@ -11,25 +11,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 
 BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
 
-# Inherit some common Komodo stuff.
-$(call inherit-product, vendor/komodo/config/common.mk)
+# Inherit common Project Lighthouse configurations
+$(call inherit-product, vendor/lighthouse/config/common.mk)
 
-# Komodo Stuff
-KOMODO_OFFICIAL := false
-KOMODO_GAPPS_TYPE := nogapps
-KOMODO_VARIANT := RELEASE
 
 # Some Build Flags
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_FACE_UNLOCK := false
-TARGET_USES_BLUR := false
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
+LIGHTHOUSE_BUILD_TYPE := UNOFFICIAL
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := komodo_X00TD
+PRODUCT_NAME := lighthouse_X00TD
 PRODUCT_DEVICE := X00TD
 PRODUCT_BRAND := asus
 PRODUCT_MODEL := Zenfone Max Pro M1
