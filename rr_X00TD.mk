@@ -14,7 +14,7 @@ $(call inherit-product, vendor/rr/config/common_full_phone.mk)
 
 # RR Stuffs
 TARGET_FACE_UNLOCK_SUPPORTED := true
-RR_BUILDTYPE := エレクトロ
+RR_BUILDTYPE := ラマダン
 BUILD_RR_WALLPAPERS:= true
 
 # Inherit from X00TD device
