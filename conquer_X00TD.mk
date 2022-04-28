@@ -14,13 +14,8 @@ $(call inherit-product, vendor/conquer/config/common.mk)
 
 # Stuff
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_GAPPS_ARCH := arm64
-
-# Maintainer
-PRODUCT_GENERIC_PROPERTIES += \
-    ro.conquer.maintainer=Tiktodz
-
-PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
+CONQUER_BUILD_TYPE := UNOFFICIAL
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
