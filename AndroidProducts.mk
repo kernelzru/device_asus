@@ -5,10 +5,10 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cherish_X00TD.mk
+    $(LOCAL_DIR)/conquer_X00TD.mk
 
 COMMON_LUNCH_CHOICES := \
-    cherish_X00TD-userdebug \
-    cherish_X00TD-eng \
-    cherish_X00TD-user
+    conquer_X00TD-userdebug \
+    conquer_X00TD-eng \
+    conquer_X00TD-user
 
