@@ -13,13 +13,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 # Set BootAnimation Resolution
-TARGET_BOOT_ANIMATION_RES := 720
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Evoution-X
-EVO_BUILD_TYPE := OFFICIAL
+EVO_BUILD_TYPE := UNOFFICIAL
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := evolution_X00TD
