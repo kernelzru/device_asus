@@ -8,5 +8,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/syberia_X00TD.mk
 
 COMMON_LUNCH_CHOICES := \
+    syberia_X00TD-user \
+    syberia_X00TD-eng \
     syberia_X00TD-userdebug
-
