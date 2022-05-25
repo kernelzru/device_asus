@@ -12,12 +12,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 # Inherit some common LineageOS stuff
 $(call inherit-product, vendor/corvus/config/common_full_phone.mk)
 
-# Corvus
-RAVEN_LAIR := Unofficial
-TARGET_INCLUDE_PIXEL_CHARGER := true
-TARGET_GAPPS_ARCH := arm64
-USE_GAPPS := true
+# Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
+
+# Gapps Config
+TARGET_GAPPS_ARCH := arm64
+
+# Live Wallpaper
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+
+# Google Recorder
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -31,8 +36,9 @@ PRODUCT_MANUFACTURER := asus
 
 PRODUCT_GMS_CLIENTID_BASE := android-asus
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.corvus.maintainer=Tiktodz
+# Maintainer
+RAVEN_LAIR := UnOfficial
+CORVUS_MAINTAINER := Tiktodz
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE=ASUS_X00T \
