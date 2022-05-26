@@ -5,8 +5,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/corvus_X00TD.mk
+    $(LOCAL_DIR)/spark_X00TD.mk
 
 COMMON_LUNCH_CHOICES := \
-    corvus_X00TD-userdebug
+    spark_X00TD-userdebug
 
