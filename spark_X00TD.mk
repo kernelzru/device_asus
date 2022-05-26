@@ -10,28 +10,30 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Inherit some common LineageOS stuff
-$(call inherit-product, vendor/corvus/config/common_full_phone.mk)
+$(call inherit-product, vendor/spark/config/common_full_phone.mk)
 
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Gapps Config
 TARGET_GAPPS_ARCH := arm64
+WITH_GAPPS := true
+
+# Poduct spec
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_USES_BLUR := true
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := corvus_X00TD
+PRODUCT_NAME := spark_X00TD
 PRODUCT_DEVICE := X00TD
 PRODUCT_BRAND := asus
 PRODUCT_MODEL := Zenfone Max Pro M1
 PRODUCT_MANUFACTURER := asus
 
 PRODUCT_GMS_CLIENTID_BASE := android-asus
-
-# Maintainer
-CORVUS_MAINTAINER := Tiktodz
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE=ASUS_X00T \
