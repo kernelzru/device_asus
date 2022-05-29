@@ -21,7 +21,7 @@ WITH_GAPPS := true
 
 # Poduct spec
 TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_USES_BLUR := true
+TARGET_SUPPORTS_QUICK_TAP := true
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
