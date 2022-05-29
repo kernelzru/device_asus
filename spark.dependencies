@@ -1,6 +1,7 @@
 [
   {
-    "repository": "android_device_asus_sdm660-common",
+    "remote":      "Tiktodz",
+    "repository":  "ct",
     "target_path": "device/asus/sdm660-common"
   }
 ]
