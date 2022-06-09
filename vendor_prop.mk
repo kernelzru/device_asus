@@ -135,6 +135,7 @@ PRODUCT_PROPERTY_OVERRIDES +=  \
     vendor.qcom.bluetooth.soc=cherokee \
     vendor.video.disable.ubwc=1 \
     vendor.voice.path.for.pcm.voip=false \
+    debug.sf.enable_gl_backpressure=1 \
     debug.sf.early_phase_offset_ns=1500000 \
     debug.sf.early_app_phase_offset_ns=1500000 \
     debug.sf.early_gl_phase_offset_ns=3000000 \
