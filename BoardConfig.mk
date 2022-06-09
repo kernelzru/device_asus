@@ -186,8 +186,8 @@ ENABLE_VENDOR_RIL_SERVICE := true
 # Seccomp
 BOARD_SECCOMP_POLICY := $(DEVICE_PATH)/seccomp
 
-# Security patch level
-VENDOR_SECURITY_PATCH := 2020-04-05
+# Security vendor patch level
+VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
 # SELinux
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/minimal_sepolicy
