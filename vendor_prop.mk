@@ -63,6 +63,7 @@ PRODUCT_PROPERTY_OVERRIDES +=  \
     ro.vendor.audio.sdk.ssr=false \
     ro.vendor.bluetooth.wipower=false \
     ro.vendor.extension_library=libqti-perfd-client.so \
+    ro.vendor.perf.scroll_opt=true \
     ro.vendor.icepower.effect.enable=true \
     ro.vendor.manufacturer.product.name=zb601kl_m1 \
     ro.vendor.qti.sdk.sensors.gestures=false \
