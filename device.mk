@@ -79,11 +79,13 @@ PRODUCT_PACKAGES += \
 # Call the proprietary setup
 $(call inherit-product, vendor/asus/X00T/X00T-vendor.mk)
 
+# Call the GoogleCameraGo
+$(call inherit-product, packages/apps/GoogleCameraGoEdition/GoogleCameraGoEdition.mk)
+
 # Camera
 PRODUCT_PACKAGES += \
     libgui_vendor \
-    libxml2 \
-    Snap
+    libxml2
 
 # Connectivity Engine support (CNE)
 PRODUCT_PACKAGES += \
