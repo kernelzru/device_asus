@@ -110,11 +110,14 @@ void vendor_load_properties()
     property_override("ro.debuggable", "0");
     property_override("ro.build.type", "user");
     property_override("ro.build.tags", "release-keys");
+    property_override("ro.build.selinux", "0");
     property_override("ro.boot.warranty_bit", "0");
     property_override("ro.warranty_bit", "0");
     property_override("ro.secure", "1");
     property_override("ro.boot.flash.locked", "1");
     property_override("ro.boot.verifiedbootstate", "green");
+    property_override("ro.boot.selinux", "permissive");
+    property_override("ro.boot.veritymode", "permissive");
     property_override("ro.boot.vbmeta.device_state", "locked");
     property_override("ro.build.description", "walleye-user 8.1.0 OPM1.171019.011 4448085 release-keys");
     property_override("ro.build.fingerprint", "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys");
