@@ -14,7 +14,7 @@ $(call inherit-product, vendor/rr/config/common_full_phone.mk)
 
 # RR Stuffs
 TARGET_FACE_UNLOCK_SUPPORTED := true
-RR_BUILDTYPE := MORBIUS
+RR_BUILDTYPE := UNOFFICIAL
 BUILD_RR_WALLPAPERS:= true
 
 # Inherit from X00TD device
