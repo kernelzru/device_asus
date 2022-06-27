@@ -47,6 +47,17 @@ using android::base::GetProperty;
 using android::base::ReadFileToString;
 using android::base::Trim;
 using android::init::property_set;
+using std::string;
+
+void property_override(string prop, string value)
+{
+    auto pi = (prop_info*) __system_property_find(prop.c_str());
+
+    if (pi != nullptr)
+        __system_property_update(pi, value.c_str(), value.size());
+    else
+        __system_property_add(prop.c_str(), prop.size(), value.c_str(), value.size());
+}
 
 void property_override(char const prop[], char const value[])
 {
@@ -164,6 +175,23 @@ void vendor_check_variant()
 
     // Set region code via ro.config.versatility prop
     property_set("ro.config.versatility", region);
+
+   // Safetynet Workaround
+    property_override("ro.debuggable", "0");
+    property_override("ro.build.type", "user");
+    property_override("ro.build.tags", "release-keys");
+    property_override("ro.build.selinux", "1");
+    property_override("ro.boot.warranty_bit", "0");
+    property_override("ro.warranty_bit", "0");
+    property_override("ro.secure", "1");
+    property_override("ro.boot.flash.locked", "1");
+    property_override("ro.boot.verifiedbootstate", "green");
+    property_override("ro.boot.selinux", "enforcing");
+    property_override("ro.boot.veritymode", "enforcing");
+    property_override("ro.boot.vbmeta.device_state", "locked");
+    property_override("ro.build.description", "walleye-user 8.1.0 OPM1.171019.011 4448085 release-keys");
+    property_override("ro.build.fingerprint", "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys");
+    property_override("ro.system.build.fingerprint", "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys");
 }
 
 void vendor_load_properties()
