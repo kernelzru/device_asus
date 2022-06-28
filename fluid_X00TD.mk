@@ -39,7 +39,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 FLUID_BUILD_TYPE := UNOFFICIAL
 
 PRODUCT_PRODUCT_PROPERTIES += \
-  ro.fluid.maintainer=SangeethKarayi \
+  ro.fluid.maintainer=TIKTODZ \
   ro.fluid.cpu=SDM636
 
 TARGET_INCLUDE_GAPPS := true
