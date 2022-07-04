@@ -10,14 +10,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Inherit some common LineageOS stuff
-$(call inherit-product, vendor/corvus/config/common.mk)
+$(call inherit-product, vendor/corvus/config/common_full_phone.mk)
 
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Gapps Config
 TARGET_GAPPS_ARCH := arm64
-WITH_GAPPS := true
+USE_GAPPS := true
 
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
