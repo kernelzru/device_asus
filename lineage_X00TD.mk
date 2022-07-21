@@ -14,13 +14,11 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit some riceDroid stuff.
 RICE_MAINTAINER := TIKTODZ
-TARGET_ENABLE_BLUR := true
-TARGET_HAS_UDFPS := false
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_GAPPS := arm64
-WITH_GAPPS := true
-TARGET_BOOT_ANIMATION_RES := 1080
+WITH_GMS := true
+SUSHI_BOOTANIMATION := 1080
+TARGET_BUILD_GRAPHENEOS_CAMERA := true
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
