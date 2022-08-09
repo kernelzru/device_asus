@@ -18,6 +18,7 @@ TARGET_USES_BLUR := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_DISABLE_POSTRENDER_CLEANUP := true
 TARGET_GAPPS_ARCH := arm64
+USE_LEGACY_BOOTANIMATION := true
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
