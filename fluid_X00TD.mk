@@ -13,16 +13,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 $(call inherit-product, vendor/fluid/config/common_full_phone.mk)
 
 # Fluid stuff
-#TARGET_INCLUDE_WIFI_EXT := true
+TARGET_INCLUDE_WIFI_EXT := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_USES_BLUR := true
 IS_PHONE := true
 scr_resolution := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
 FLUID_BUILD_TYPE := UNOFFICIAL
-#TARGET_INCLUDE_GAPPS := true
-#TARGET_GAPPS_ARCH := arm64
-#TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
