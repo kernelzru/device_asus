@@ -17,7 +17,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 
 # Gapps Config
 TARGET_GAPPS_ARCH := arm64
-WITH_GAPPS := true
+WITH_GAPPS := false
 
 # Poduct spec
 TARGET_FACE_UNLOCK_SUPPORTED := true
