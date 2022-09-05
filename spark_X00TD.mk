@@ -16,8 +16,8 @@ $(call inherit-product, vendor/spark/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Gapps Config
-# TARGET_GAPPS_ARCH := arm64
-# WITH_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
+WITH_GAPPS := true
 
 # Poduct spec
 TARGET_FACE_UNLOCK_SUPPORTED := true
