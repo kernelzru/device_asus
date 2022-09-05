@@ -15,12 +15,11 @@ $(call inherit-product, vendor/superior/config/common.mk)
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# Device identifier. This must come after all inclusions.
-PRODUCT_NAME := corvus_X00TD
-PRODUCT_DEVICE := X00TD
 PRODUCT_BRAND := asus
-PRODUCT_MODEL := Zenfone Max Pro M1
+PRODUCT_DEVICE := X00TD
 PRODUCT_MANUFACTURER := asus
+PRODUCT_NAME := superior_X00TD
+PRODUCT_MODEL := Zenfone Max Pro M1
 
 PRODUCT_GMS_CLIENTID_BASE := android-asus
 
