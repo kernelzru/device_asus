@@ -12,16 +12,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 # Inherit some common superior stuff
 $(call inherit-product, vendor/superior/config/common.mk)
 
-
-# Bootanimation
-TARGET_BOOT_ANIMATION_RES := 1080
-
-# Gapps Config
-TARGET_GAPPS_ARCH := arm64
-USE_GAPPS := false
-
-TARGET_FACE_UNLOCK_SUPPORTED := true
-
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
