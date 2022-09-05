@@ -14,7 +14,7 @@ $(call inherit-product, vendor/cipher/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Maintainer
-CIPHER_MAINTAINER := Tiktodz
+CIPHER_MAINTAINER := SKetU
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
