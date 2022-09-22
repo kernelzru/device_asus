@@ -14,7 +14,7 @@ $(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 
 # Xtended stuff
 TARGET_BOOT_ANIMATION_RES := 1080
-XTENDED_BUILD_MAINTAINER := Tiktodz
+XTENDED_BUILD_MAINTAINER := SKetU
 PROCESSOR_MODEL := SDM660
 
 # Inherit from X00TD device
@@ -32,7 +32,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-asus
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE=ASUS_X00T \
     PRODUCT_NAME=WW_X00T \
-    PRIVATE_BUILD_DESC="redfin-user 12 SQ1A.220105.002 7961164 release-keys"
+    PRIVATE_BUILD_DESC="raven-user 13 TP1A.220624.021 8650216 release-keys"
 
 # Build fingerprint
-BUILD_FINGERPRINT := "google/redfin/redfin:12/SQ1A.220105.002/7961164:user/release-keys"
+BUILD_FINGERPRINT := "google/raven/raven:13/TP1A.220624.021/8650216:user/release-keys"
