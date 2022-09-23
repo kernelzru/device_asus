@@ -19,6 +19,8 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 WITH_GMS := true
 SUSHI_BOOTANIMATION := 1080
 TARGET_BUILD_GRAPHENEOS_CAMERA := true
+TARGET_HAS_UDFPS := false
+TARGET_ENABLE_BLUR := true/false
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
