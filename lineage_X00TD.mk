@@ -20,7 +20,7 @@ WITH_GMS := true
 SUSHI_BOOTANIMATION := 1080
 TARGET_BUILD_GRAPHENEOS_CAMERA := true
 TARGET_HAS_UDFPS := false
-TARGET_ENABLE_BLUR := true/false
+TARGET_ENABLE_BLUR := true
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
