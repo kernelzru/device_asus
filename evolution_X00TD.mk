@@ -18,7 +18,7 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Evoution-X
 EVO_BUILD_TYPE := UNOFFICIAL
-EVO_MAINTAINER := SKetU_ま
+EVO_MAINTAINER := SKetU ま
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
