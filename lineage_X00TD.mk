@@ -16,7 +16,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 RICE_MAINTAINER := SKetU
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
-WITH_GMS := true
+WITH_GMS := false
 SUSHI_BOOTANIMATION := 1080
 TARGET_BUILD_GRAPHENEOS_CAMERA := true
 TARGET_HAS_UDFPS := false
