@@ -36,7 +36,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-asus
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE=ASUS_X00T \
     PRODUCT_NAME=WW_X00T \
-    PRIVATE_BUILD_DESC="raven-user 13 TP1A.220624.021 8650216 release-keys"
+    PRIVATE_BUILD_DESC="panther-user 13 TD1A.220804.009.A2 8940162 release-keys"
 
 # Build fingerprint
-BUILD_FINGERPRINT := "google/raven/raven:13/TP1A.220624.021/8650216:user/release-keys"
+BUILD_FINGERPRINT := "google/panther/panther:13/TD1A.220804.009.A2/8940162:user/release-keys"
