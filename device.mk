@@ -7,11 +7,6 @@
 # Inherit from sdm660-common
 $(call inherit-product, device/asus/sdm660-common/sdm660.mk)
 
-# AsusClock & AsusCalculator
-PRODUCT_PACKAGES += \
-    AsusClock \
-    AsusCalculator
-
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2160
 TARGET_SCREEN_WIDTH := 1080
@@ -22,7 +17,8 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    init.device.rc
+    init.device.rc \
+    ExactCalculator
 
 # Thermal configs
 PRODUCT_COPY_FILES += \
