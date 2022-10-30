@@ -18,7 +18,8 @@ DEVICE_PACKAGE_OVERLAYS += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.device.rc \
-    ExactCalculator
+    ExactCalculator \
+    Etar
 
 # Thermal configs
 PRODUCT_COPY_FILES += \
